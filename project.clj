@@ -6,13 +6,13 @@
             :year 2016
             :key "mit"}
   :dependencies [[org.clojure/clojure "1.8.0" :scope "provided"]
-                 [io.prometheus/simpleclient "0.4.0"]
-                 [io.prometheus/simpleclient_common "0.4.0"]
-                 [io.prometheus/simpleclient_pushgateway "0.4.0"]
-                 [io.prometheus/simpleclient_hotspot "0.4.0" :scope "provided"]]
+                 [io.prometheus/simpleclient "0.5.0"]
+                 [io.prometheus/simpleclient_common "0.5.0"]
+                 [io.prometheus/simpleclient_pushgateway "0.5.0"]
+                 [io.prometheus/simpleclient_hotspot "0.5.0"]]
   :profiles {:dev
-             {:dependencies [[org.clojure/test.check "0.9.0"]
-                             [aleph "0.4.4"]]
+             {:dependencies [[org.clojure/test.check "0.10.0-alpha3"]
+                             [aleph "0.4.6"]]
               :global-vars {*warn-on-reflection* true}}
              :codox
              {:plugins [[lein-codox "0.10.0"]]
